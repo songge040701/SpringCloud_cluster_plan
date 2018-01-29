@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/songge040701/SpringCloudConfig
+          searchPaths: demo_client_config
+          username: 
+          password: 
+      label: master
+  application:
+    name: config-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://39.107.98.58:8761/eureka/
+server:
+  port: 8888
